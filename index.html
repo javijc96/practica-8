@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Inicio Práctica 8</title>
+    <style>
+        body {
+            background-color: #292929;
+            padding: 8px;
+            color: white;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh;
+            gap: 5px;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .grid-item:hover {
+            filter: brightness(120%);
+            transition: all ease 0.5s;
+        }
+
+        .red {
+            background-color: rgb(172, 8, 8);
+        }
+
+        .blue {
+            background-color: rgb(16, 16, 170);
+        }
+
+        .green {
+            background-color: rgb(2, 146, 2);
+        }
+
+        .violet {
+            background-color: rgb(162, 7, 162);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Práctica 8 - Javier Juárez Canals</h1>
+    <div class="grid-container">
+        <a href="./apartados/gestionJs.html" class="red grid-item"> Gestión elementos JS</a>
+        <a href="./apartados/gestionJquery.html" class="grid-item blue"> Gestión elementos JQuery</a>
+        <a href="./apartados/benchmarkJs.html" class="grid-item green"> Human Benchmark JS</a>
+        <a href="./apartados/benchmarkJquery.html" class="grid-item violet"> Human Benchmark JQuery</a>
+    </div>
+</body>
+
+</html>
